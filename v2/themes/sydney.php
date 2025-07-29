@@ -46,7 +46,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 					),
 					$plugins
 				),
-				'color_scheme' => array( '#1D3F3A', '#56716C', '#102226', '#102226', '#737C8C', '#00102E', '#EFF9F5', '#dbdbdb', '#ffffff' ),
 				'import'     => array(
 					'elementor'    => array(
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/main-pro/content.xml',
@@ -81,7 +80,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 					),
 					$plugins
 				),
-				'color_scheme' => array( '#ffd00a', '#FBDC56', '#142E2C', '#00102E', '#737C8C', '#00102E', '#F4F5F7', '#dbdbdb', '#ffffff' ),
 				'import'     => array(
 					'elementor'    => array(
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/main-free/content.xml',
@@ -122,7 +120,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 					),
 					$plugins
 				),
-				'color_scheme' => array( '#ab000d', '#6C0008', '#00102E', '#00102E', '#737C8C', '#EDEDED', '#F7F7F7', '#dbdbdb', '#ffffff' ),
 				'import'     => array(
 					'elementor'    => array(
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/fashion/content.xml',
