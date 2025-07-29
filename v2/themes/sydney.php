@@ -1118,28 +1118,6 @@ function sydney_atss_setup_after_import( $demo_id ) {
 	}
 
 	atss()->current_starter( 'sydney', $demo_id );
-	
-	//Custom import settings
-	$custom_import_settings = get_transient('atss_custom_import_settings');
-	
-	$custom_colors = $custom_import_settings['color_scheme'];
-	
-	$i = 1;
-	foreach ($custom_colors as $custom_color) {
-		set_theme_mod('global_color_' . $i, $custom_color);
-
-		$i++;
-	}
-	
-	if (isset($custom_import_settings['custom_logo']) && '' !== $custom_import_settings['custom_logo'] ) {
-		set_theme_mod('site_logo', $custom_import_settings['custom_logo']);
-	}
-
-	if (isset($custom_import_settings['custom_favicon']) && '' !== $custom_import_settings['custom_favicon'] ) {
-		update_option('site_icon', attachment_url_to_postid( $custom_import_settings['custom_favicon'] ) );
-	}	
-	
-
 }
 add_action( 'atss_finish_import', 'sydney_atss_setup_after_import' );
 
