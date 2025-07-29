@@ -95,4 +95,27 @@ class ATSS_Core_Helpers {
 
 		return $page_got_by_title;
 	}
+
+	/**
+	 * Read and get remote file content.
+	 * 
+	 * @param string $url The URL of the file.
+	 * 
+	 * @return string|bool The content of the file or false if the file is not found.
+	 */
+	public static function atss_get_remote_file( $url ) {
+		$response = wp_remote_get( $url );
+
+		if ( is_wp_error( $response ) ) {
+			return false;
+		}
+
+		$body = wp_remote_retrieve_body( $response );
+
+		if ( empty( $body ) ) {
+			return false;
+		}
+
+		return $body;
+	}
 }

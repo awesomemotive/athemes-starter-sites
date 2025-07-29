@@ -18,6 +18,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 class ATSS_Demos_Page {
 
 	/**
+	 * Theme object.
+	 * 
+	 * @var object $theme The theme object.
+	 */
+	public $theme;
+
+	/**
 	 * The settings of page.
 	 *
 	 * @var array $settings The settings.
@@ -41,6 +48,10 @@ class ATSS_Demos_Page {
 	 * Constructor.
 	 */
 	public function __construct() {
+		$theme = wp_get_theme();
+		$theme = ( get_template_directory() !== get_stylesheet_directory() && $theme->parent() ) ? $theme->parent() : $theme;
+
+		$this->theme = $theme;
 
 		add_action( 'init', array( $this, 'set_demos' ) );
 		add_action( 'init', array( $this, 'set_settings' ) );
@@ -60,6 +71,27 @@ class ATSS_Demos_Page {
 		add_action( 'atss_plugin_activation', array( $this, 'reset_notices' ) );
 		add_action( 'atss_plugin_deactivation', array( $this, 'reset_notices' ) );
 
+	}
+
+	/**
+	 * Get theme upsell link.
+	 * 
+	 * @return string
+	 */
+	public function get_theme_utm_link( $utm_source, $utm_content = '' ) {
+		$theme = $this->theme;
+		$theme_name = $theme->get( 'Name' );
+		$theme_link = '';
+
+		if ( $theme_name === 'Botiga' ) {
+			$theme_link = 'https://athemes.com/botiga-upgrade/?utm_source=' . $utm_source . '&utm_content=' . $utm_content . '&utm_medium=button&utm_campaign=Botiga';
+		}
+
+		if ( $theme_name === 'Sydney' ) {
+			$theme_link = 'https://athemes.com/sydney-upgrade/?utm_source=' . $utm_source . '&utm_content=' . $utm_content . '&utm_medium=button&utm_campaign=SydneyPro';
+		}
+
+		return $theme_link;
 	}
 
 	/**
@@ -231,7 +263,7 @@ class ATSS_Demos_Page {
 											<a href="#" class="atss-import-open-button button button-primary" data-color-scheme="<?php echo esc_attr( $color_scheme ); ?>"  data-demo-id="<?php echo esc_attr( $demo_id ); ?>"><?php esc_html_e( 'Import', 'athemes-starter-sites' ); ?></a>
 										<?php endif; ?>
 										<?php if ( ! $this->settings['has_pro'] && $demo['type'] === 'pro' ) : ?>
-											<a href="<?php echo esc_url( $this->settings['pro_link'] ); ?>" target="_blank" class="atss-demo-pro-link-button button button-primary"><?php echo esc_html( $this->settings['pro_label'] ); ?></a>
+											<a href="<?php echo esc_url( $this->get_theme_utm_link( 'starter_site', $demo_id ) ); ?>" target="_blank" class="atss-demo-pro-link-button button button-primary"><?php echo esc_html( $this->settings['pro_label'] ); ?></a>
 										<?php endif; ?>
 									</div>
 								</div>

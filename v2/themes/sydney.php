@@ -71,7 +71,13 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'slug'     => 'wpforms-lite',
 							'path'     => 'wpforms-lite/wpforms.php',
 							'required' => false
-						)
+						),
+						array(
+							'name'     => 'aThemes Addons for Elementor Lite',
+							'slug'     => 'athemes-addons-for-elementor-lite',
+							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
+							'required' => false
+						),
 					),
 					$plugins
 				),
@@ -107,6 +113,12 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'merchant/merchant.php',
 							'required' => false,
 						),
+						array(
+							'name'     => 'aThemes Addons for Elementor Lite',
+							'slug'     => 'athemes-addons-for-elementor-lite',
+							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
+							'required' => false
+						),
 					),
 					$plugins
 				),
@@ -135,7 +147,13 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'slug'     => 'wpforms-lite',
 							'path'     => 'wpforms-lite/wpforms.php',
 							'required' => false
-						)
+						),
+						array(
+							'name'     => 'aThemes Addons for Elementor Lite',
+							'slug'     => 'athemes-addons-for-elementor-lite',
+							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
+							'required' => false
+						),
 					),
 					$plugins
 				),
@@ -191,7 +209,13 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'slug'     => 'wpforms-lite',
 							'path'     => 'wpforms-lite/wpforms.php',
 							'required' => false
-						)
+						),
+						array(
+							'name'     => 'aThemes Addons for Elementor Lite',
+							'slug'     => 'athemes-addons-for-elementor-lite',
+							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
+							'required' => false
+						),
 					),
 					$plugins
 				),
@@ -203,6 +227,40 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 					),
 				),
 			),	
+			'interior-design'    => array(
+				'name'       => esc_html__( 'Interior Design', 'sydney' ),
+				'type'       => 'pro',
+				'categories' => array( 'business' ),
+				'builders'   => array(
+					'elementor',
+				),
+				'preview'    => 'https://demo.athemes.com/sydney-interior-design/',
+				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/interior-design/thumb.jpg',
+				'plugins'    => array_merge(
+					array(
+						array(
+							'name'     => 'WPForms',
+							'slug'     => 'wpforms-lite',
+							'path'     => 'wpforms-lite/wpforms.php',
+							'required' => false
+						),
+						array(
+							'name'     => 'aThemes Addons for Elementor Lite',
+							'slug'     => 'athemes-addons-for-elementor-lite',
+							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
+							'required' => false
+						),
+					),
+					$plugins
+				),
+				'import'     => array(
+					'elementor'    => array(
+						'content'    => 'https://athemes.com/themes-demo-content/sydney/interior-design/content.xml',
+						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/interior-design/widgets.wie',
+						'customizer' => 'https://athemes.com/themes-demo-content/sydney/interior-design/customizer.dat',
+					),
+				),
+			),
 			'crypto'   => array(
 				'name'       => esc_html__( 'Cryptocurrency', 'sydney' ),
 				'type'       => 'pro',
@@ -228,6 +286,34 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/crypto/content.xml',
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/crypto/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/crypto/customizer.dat'
+					),
+				),
+			),
+			'painting'   => array(
+				'name'       => esc_html__( 'Painting', 'sydney' ),
+				'type'       => 'pro',
+				'categories' => array( 'business' ),
+				'builders'   => array(
+					'elementor',
+				),
+				'preview'    => 'https://demo.athemes.com/sp-painting/',
+				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/painting/thumb.jpg',
+				'plugins'    => array_merge(
+					array(
+						array(	
+							'name'     => 'WPForms',
+							'slug'     => 'wpforms-lite',
+							'path'     => 'wpforms-lite/wpforms.php',
+							'required' => false
+						)
+					),
+					$plugins
+				),
+				'import'     => array(
+					'elementor'    => array(
+						'content'    => 'https://athemes.com/themes-demo-content/sydney/painting/content.xml',
+						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/painting/widgets.wie',
+						'customizer' => 'https://athemes.com/themes-demo-content/sydney/painting/customizer.dat',
 					),
 				),
 			),
@@ -433,6 +519,34 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 					)
 				),
 			),	
+			'hair-salon'   => array(
+				'name'       => esc_html__( 'Hair Salon', 'sydney' ),
+				'type'       => 'pro',
+				'categories' => array( 'business' ),
+				'builders'   => array(
+					'elementor',
+				),
+				'preview'    => 'https://demo.athemes.com/sp-hair-salon/',
+				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/hair-salon/thumb.jpg',
+				'plugins'    => array_merge(
+					array(	
+						array(
+							'name'     => 'WPForms',
+							'slug'     => 'wpforms-lite',
+							'path'     => 'wpforms-lite/wpforms.php',
+							'required' => false
+							)
+					),
+					$plugins
+				),
+				'import'     => array(
+					'elementor'    => array(
+						'content'    => 'https://athemes.com/themes-demo-content/sydney/hair-salon/content.xml',
+						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/hair-salon/widgets.wie',
+						'customizer' => 'https://athemes.com/themes-demo-content/sydney/hair-salon/customizer.dat',
+					),
+				),
+			),			
 			'original'   => array(
 				'name'       => esc_html__( 'Original', 'sydney' ),
 				'type'       => 'pro',
@@ -523,7 +637,13 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'slug'     => 'leadin',
 							'path'     => 'leadin/leadin.php',
 							'required' => false
-						)					
+						),
+						array(
+							'name'     => 'aThemes Addons for Elementor Lite',
+							'slug'     => 'athemes-addons-for-elementor-lite',
+							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
+							'required' => false
+						),			
 					),
 					$plugins
 				),
@@ -531,7 +651,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 					'elementor'    => array( 
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/leads/content.xml',
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/leads/widgets.wie',
-						'customizer' => 'https://athemes.com/themes-demo-content/sydney/leads/customizer.dat',
+						'customizer' => 'https://athemes.com/themes-demo-content/sydney/leads/' . $customizer_file
 					),
 				),
 			),	
@@ -591,7 +711,13 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'slug'     => 'tutor-lms-elementor-addons',
 							'path'     => 'tutor-lms-elementor-addons/tutor-lms-elementor-addons.php',
 							'required' => false
-						)										
+						),
+						array(
+							'name'     => 'aThemes Addons for Elementor Lite',
+							'slug'     => 'athemes-addons-for-elementor-lite',
+							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
+							'required' => false
+						),										
 					),
 					$plugins
 				),
@@ -599,7 +725,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 					'elementor'    => array( 
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/lms/content.xml',
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/lms/widgets.wie',
-						'customizer' => 'https://athemes.com/themes-demo-content/sydney/lms/customizer.dat',
+						'customizer' => 'https://athemes.com/themes-demo-content/sydney/lms/' . $customizer_file
 					),
 				),
 			),				
@@ -856,7 +982,7 @@ add_filter( 'atss_register_demos_list', 'sydney_atss_demos_list' );
 /**
  * Define actions that happen before import
  */
-function sydney_atss_setup_before_import( $demo_id ) {
+function sydney_atss_setup_before_import( $demo_id, $builder_type ) {
 
 	$all_modules = get_option( 'sydney-modules' );
 	$all_modules = ( is_array( $all_modules ) ) ? $all_modules : (array) $all_modules;
@@ -872,7 +998,7 @@ function sydney_atss_setup_before_import( $demo_id ) {
 		update_option( 'sydney-modules', array_merge( $all_modules, array( 'templates' => true ) ) );
 	}
 }
-add_action( 'atss_import_start', 'sydney_atss_setup_before_import' );
+add_action( 'atss_import_start', 'sydney_atss_setup_before_import', 10, 2 );
 
 /**
  * Define actions that happen after import
@@ -893,6 +1019,13 @@ function sydney_atss_setup_after_import( $demo_id ) {
 		$aafe_modules = ( is_array( $aafe_modules ) ) ? $aafe_modules : (array) $aafe_modules;
 
 		update_option( 'athemes-addons-modules', array_merge( $aafe_modules, array( 'call-to-action' => true, 'team-member' => true ) ) );
+	}
+
+	if ( 'interior-design' === $demo_id ) {
+		$aafe_modules = get_option( 'athemes-addons-modules' );
+		$aafe_modules = ( is_array( $aafe_modules ) ) ? $aafe_modules : (array) $aafe_modules;
+
+		update_option( 'athemes-addons-modules', array_merge( $aafe_modules, array( 'video-popup' => true, 'team-member' => true ) ) );
 	}
 
 	if ( 'blogpro' === $demo_id ) {
@@ -932,6 +1065,25 @@ function sydney_atss_setup_after_import( $demo_id ) {
 		$merchant_modules = ( is_array( $merchant_modules ) ) ? $merchant_modules : (array) $merchant_modules;
 
 		update_option( 'merchant-modules', array_merge( $merchant_modules, array( 'quick-view' => true, 'inactive-tab-message' => true ) ) );
+
+		$aafe_modules = get_option( 'athemes-addons-modules' );
+		$aafe_modules = ( is_array( $aafe_modules ) ) ? $aafe_modules : (array) $aafe_modules;
+
+		update_option( 'athemes-addons-modules', array_merge( $aafe_modules, array( 'woo-product-grid' => true ) ) );
+	}
+
+	if ( 'plumber' === $demo_id ) {
+		$aafe_modules = get_option( 'athemes-addons-modules' );
+		$aafe_modules = ( is_array( $aafe_modules ) ) ? $aafe_modules : (array) $aafe_modules;
+
+		update_option( 'athemes-addons-modules', array_merge( $aafe_modules, array( 'logo-carousel' => true ) ) );
+	}
+
+	if ( 'leads' === $demo_id || 'hair-salon' === $demo_id || 'photography' === $demo_id ) {
+		$aafe_modules = get_option( 'athemes-addons-modules' );
+		$aafe_modules = ( is_array( $aafe_modules ) ) ? $aafe_modules : (array) $aafe_modules;
+
+		update_option( 'athemes-addons-modules', array_merge( $aafe_modules, array( 'wpforms' => true ) ) );
 	}
 
 	// Asign the static front page and the blog page.

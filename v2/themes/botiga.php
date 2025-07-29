@@ -372,12 +372,167 @@ function botiga_demos_list() {
 				),
 			),
 		),
+		'fashion' => array(
+			'name'       => esc_html__( 'Fashion', 'athemes-starter-sites' ),
+			'type'       => 'pro',
+			'categories' => array( 'ecommerce' ),
+			'builders'   => array(
+				'gutenberg',
+				'elementor',
+			),
+			'preview'    => 'https://demo.athemes.com/botiga-fashion/',
+			'thumbnail'  => 'https://athemes.com/themes-demo-content/botiga/fashion/thumb.png',
+			'plugins'    => array_merge(
+				$plugins,
+				array(
+					array(
+						'name'     => 'WPForms',
+						'slug'     => 'wpforms-lite',
+						'path'     => 'wpforms-lite/wpforms.php',
+						'required' => false
+					),
+				),
+			),
+			'import'         => array(
+				'gutenberg'    => array(
+					'content'    => 'https://athemes.com/themes-demo-content/botiga/fashion/botiga-dc-fashion.xml',
+					'widgets'    => 'https://athemes.com/themes-demo-content/botiga/fashion/botiga-w-fashion.wie',
+					'customizer' => 'https://athemes.com/themes-demo-content/botiga/fashion/botiga-c-fashion.dat'
+				),
+				'elementor'    => array(
+					'content'    => 'https://athemes.com/themes-demo-content/botiga/elementor/fashion/botiga-dc-fashion-el.xml',
+					'widgets'    => 'https://athemes.com/themes-demo-content/botiga/elementor/fashion/botiga-w-fashion-el.wie',
+					'customizer' => 'https://athemes.com/themes-demo-content/botiga/elementor/fashion/botiga-c-fashion-el.dat'
+				),
+			),
+		),
+		'handbags' => array(
+			'name'       => esc_html__( 'Handbags', 'athemes-starter-sites' ),
+			'type'       => 'pro',
+			'categories' => array( 'ecommerce' ),
+			'builders'   => array(
+				'gutenberg',
+				'elementor',
+			),
+			'preview'    => 'https://demo.athemes.com/botiga-handbags/',
+			'thumbnail'  => 'https://athemes.com/themes-demo-content/botiga/handbags/thumb.png',
+			'plugins'    => array_merge(
+				$plugins,
+				array(
+					array(
+						'name'     => 'WPForms',
+						'slug'     => 'wpforms-lite',
+						'path'     => 'wpforms-lite/wpforms.php',
+						'required' => false
+					),
+				),
+			),
+			'import'         => array(
+				'gutenberg'    => array(
+					'content'    => 'https://athemes.com/themes-demo-content/botiga/handbags/botiga-dc-handbags.xml',
+					'widgets'    => 'https://athemes.com/themes-demo-content/botiga/handbags/botiga-w-handbags.wie',
+					'customizer' => 'https://athemes.com/themes-demo-content/botiga/handbags/botiga-c-handbags.dat'
+				),
+				'elementor'    => array(
+					'content'    => 'https://athemes.com/themes-demo-content/botiga/elementor/handbags/botiga-dc-handbags-el.xml',
+					'widgets'    => 'https://athemes.com/themes-demo-content/botiga/elementor/handbags/botiga-w-handbags-el.wie',
+					'customizer' => 'https://athemes.com/themes-demo-content/botiga/elementor/handbags/botiga-c-handbags-el.dat'
+				),
+			),
+		),
 	);
 
 	return $demos;
 
 }
 add_filter( 'atss_register_demos_list', 'botiga_demos_list' );
+
+/**
+ * Define actions that happen before import
+ */
+function botiga_setup_before_import( $demo_id, $builder_type ) {
+	$demos_extra_data = array(
+		'fashion' => array(
+			'extras' => array(
+				'gutenberg' => array(
+					'product-filter-presets' => 'https://athemes.com/themes-demo-content/botiga/fashion/botiga-filters-presets-fashion.txt',
+					'product-filter-data' => 'https://athemes.com/themes-demo-content/botiga/fashion/botiga-filters-data-fashion.txt',
+					'templates-builder-data' => 'https://athemes.com/themes-demo-content/botiga/fashion/botiga-tb-fashion.txt' 
+				),
+				'elementor' => array(
+					'product-filter-presets' => 'https://athemes.com/themes-demo-content/botiga/elementor/fashion/botiga-filters-presets-fashion-el.txt',
+					'product-filter-data' => 'https://athemes.com/themes-demo-content/botiga/elementor/fashion/botiga-filters-data-fashion-el.txt',
+					'templates-builder-data' => 'https://athemes.com/themes-demo-content/botiga/elementor/fashion/botiga-tb-fashion-el.txt'
+				),					
+			)
+		),
+		'handbags' => array(
+			'extras' => array(
+				'gutenberg' => array(
+					'product-filter-presets' => 'https://athemes.com/themes-demo-content/botiga/handbags/botiga-filters-presets-handbags.txt',
+					'product-filter-data' => 'https://athemes.com/themes-demo-content/botiga/handbags/botiga-filters-data-handbags.txt',
+					'templates-builder-data' => 'https://athemes.com/themes-demo-content/botiga/handbags/botiga-tb-handbags.txt' 
+				),
+				'elementor' => array(
+					'product-filter-presets' => 'https://athemes.com/themes-demo-content/botiga/elementor/handbags/botiga-filters-presets-handbags-el.txt',
+					'product-filter-data' => 'https://athemes.com/themes-demo-content/botiga/elementor/handbags/botiga-filters-data-handbags-el.txt',
+					'templates-builder-data' => 'https://athemes.com/themes-demo-content/botiga/elementor/handbags/botiga-tb-handbags-el.txt'
+				),					
+			)
+		)
+	);
+	
+	// Fashion Demo Extras
+	if ( $demo_id === 'fashion' ) {
+		$modules = get_option( 'botiga-modules', array() );
+		update_option( 'botiga-modules', array_merge( $modules, array( 
+			'advanced-reviews' 			=> true,
+			'wishlist' 					=> true,
+			'sticky-add-to-cart' 		=> true,
+			'shop-filters'       		=> true,
+			'templates'		       		=> true,
+		) ) );
+
+		$shop_filter_presets = ATSS_Core_Helpers::atss_get_remote_file( $demos_extra_data[ $demo_id ]['extras'][ $builder_type ]['product-filter-presets'] );
+		$shop_filter_data = ATSS_Core_Helpers::atss_get_remote_file( $demos_extra_data[ $demo_id ]['extras'][ $builder_type ]['product-filter-data'] );
+
+		update_option( 'botiga-shop-filters-presets', $shop_filter_presets );
+		update_option( 'botiga-shop-filters-presets-settings', $shop_filter_data );
+
+		$templates_builder_data = ATSS_Core_Helpers::atss_get_remote_file( $demos_extra_data[ $demo_id ]['extras'][ $builder_type ]['templates-builder-data'] );
+
+		// Append custom data to the templates builder data.
+		$templates_builder_data = atss_botiga_append_templates_builder_data( json_decode( $templates_builder_data, true ) );
+		
+		update_option( 'botiga_template_builder_data', $templates_builder_data );
+	}
+
+	// Handbags Demo Extras
+	if ( $demo_id === 'handbags' ) {
+		$modules = get_option( 'botiga-modules', array() );
+		update_option( 'botiga-modules', array_merge( $modules, array( 
+			'advanced-reviews' 			=> true,
+			'wishlist' 					=> true,
+			'shop-filters'       		=> true,
+			'templates'		       		=> true,
+			'mega-menu'		       		=> true,
+		) ) );
+
+		$shop_filter_presets = ATSS_Core_Helpers::atss_get_remote_file( $demos_extra_data[ $demo_id ]['extras'][ $builder_type ]['product-filter-presets'] );
+		$shop_filter_data = ATSS_Core_Helpers::atss_get_remote_file( $demos_extra_data[ $demo_id ]['extras'][ $builder_type ]['product-filter-data'] );
+
+		update_option( 'botiga-shop-filters-presets', $shop_filter_presets );
+		update_option( 'botiga-shop-filters-presets-settings', $shop_filter_data );
+
+		$templates_builder_data = ATSS_Core_Helpers::atss_get_remote_file( $demos_extra_data[ $demo_id ]['extras'][ $builder_type ]['templates-builder-data'] );
+
+		// Append custom data to the templates builder data.
+		$templates_builder_data = atss_botiga_append_templates_builder_data( json_decode( $templates_builder_data, true ) );
+		
+		update_option( 'botiga_template_builder_data', $templates_builder_data );
+	}
+}
+add_action( 'atss_import_start', 'botiga_setup_before_import', 10, 2 );
 
 /**
  * Define actions that happen after import
@@ -500,7 +655,7 @@ function botiga_setup_after_import( $demo_id ) {
 		$modules = get_option( 'botiga-modules', array() );
 		update_option( 'botiga-modules', array_merge( $modules, array( 
 			'advanced-reviews' 			=> true,
-			 'buy-now' 					=> true,
+			'buy-now' 					=> true,
 		) ) );
 	}
 
@@ -586,6 +741,26 @@ function botiga_setup_after_import( $demo_id ) {
 
 }
 add_action( 'atss_finish_import', 'botiga_setup_after_import' );
+
+/**
+ * Append custom data to the templates builder data.
+ * 
+ * @param array $templates_builder_data The templates builder data.
+ * 
+ * @return array
+ */
+function atss_botiga_append_templates_builder_data( $templates_builder_data ) {
+	$new_data = array();
+
+	// Update the templates builder data.
+	foreach( $templates_builder_data as $template ) {
+		$template['template_preview_url'] = get_bloginfo( 'url' ) . '/athemes_hf/' . $template['id'] . '-content';
+
+		$new_data[] = $template;
+	}
+
+	return $new_data;
+}
 
 // Do not create default WooCommerce pages when plugin is activated
 // The condition avoid the filter being applied in others pages
