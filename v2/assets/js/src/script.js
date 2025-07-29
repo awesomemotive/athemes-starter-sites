@@ -269,7 +269,6 @@ _dcs.account = 5598225;
         e.preventDefault();
 
         var demoId      = $(this).data('demo-id');
-        var colorScheme = $(this).data('color-scheme');
         var demoObj     = window.atss_localize.demos[ demoId ];
         var template    = wp.template('atss-import');
 
@@ -281,7 +280,6 @@ _dcs.account = 5598225;
           demoObj.args = {};
 
           demoObj.args.demoId   = demoId;
-          demoObj.args.colorScheme = colorScheme;
           demoObj.args.quick    = $(this).data('quick') || ( demoObj.builders.length < 2 ) || false;
           demoObj.args.builder  = $(this).data('builder') || demoObj.builders[0];
           demoObj.args.imported = window.atss_localize.imported || atssDoneOrFail;
