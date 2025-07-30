@@ -458,8 +458,10 @@ class ATSS_Demos_Page {
 											<# } ); #>
 											<# _.each( data.plugins, function( plugin ) { #>
 												<# var isPluginRequired = ( plugin.required ) ? ' atss-import-plugin-required' : ''; #>
-												<label class="atss-import-plugin-{{ plugin.slug }}{{ isPluginRequired }}">
-													<input type="checkbox" name="plugin" data-action="atss_import_plugin" data-priority="30" data-slug="{{ plugin.slug }}" data-path="{{ plugin.path }}" data-log="<?php esc_html_e( 'Installing and activating', 'athemes-starter-sites' ); ?>: {{ plugin.name }}" checked="checked" />
+												<# var isPluginHidden = ( plugin.builder && plugin.builder !== data.args.builder ) ? ' atss-hidden' : ''; #>
+												<# var isPluginChecked = ( plugin.builder && plugin.builder !== data.args.builder ) ? '' : ' checked="checked"'; #>
+												<label class="atss-import-plugin-{{ plugin.slug }}{{ isPluginRequired }}{{ isPluginHidden }}" data-plugin-builder="{{ plugin.builder }}">
+													<input type="checkbox" name="plugin" data-action="atss_import_plugin" data-priority="30" data-slug="{{ plugin.slug }}" data-path="{{ plugin.path }}" data-log="<?php esc_html_e( 'Installing and activating', 'athemes-starter-sites' ); ?>: {{ plugin.name }}" {{{ isPluginChecked }}} />
 													<span><i></i></span>
 													{{{ plugin.name }}}
 												</label>
