@@ -876,35 +876,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 					),
 				),
 			),
-			'podcast'    => array(
-				'name'       => esc_html__( 'Podcast', 'sydney' ),
-				'type'       => 'pro',
-				'categories' => array( 'business' ),
-				'builders'   => array(
-					'elementor',
-					'gutenberg',
-				),
-				'preview'    => 'https://demo.athemes.com/podcast/',
-				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/podcast/thumb.jpg',
-				'plugins'    => array_merge(
-					array(
-						array(
-							'name'     => 'WPForms',
-							'slug'     => 'wpforms-lite',
-							'path'     => 'wpforms-lite/wpforms.php',
-							'required' => false
-						)
-					),
-					$plugins
-				),
-				'import'     => array(
-					'elementor'    => array(
-						'content'    => 'https://athemes.com/themes-demo-content/sydney/podcast/content.xml',
-						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/podcast/widgets.wie',
-						'customizer' => 'https://athemes.com/themes-demo-content/sydney/podcast/customizer.dat',
-					),
-				),
-			),
 			'restaurant' => array(
 				'name'       => esc_html__( 'Restaurant (requires Elementor Containers)', 'sydney' ),
 				'type'       => 'pro',
