@@ -1001,40 +1001,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 					),
 				),
 			),
-			'wedding'    => array(
-				'name'       => esc_html__( 'Wedding', 'sydney' ),
-				'type'       => 'pro',
-				'categories' => array( 'event'),
-				'builders'   => array(
-					'elementor',
-					'gutenberg',
-				),
-				'preview'    => 'https://demo.athemes.com/sp-wedding/',
-				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/wedding/thumb.jpg',
-				'plugins'    => array_merge(
-					array(
-						array(
-							'name'     => 'WPForms',
-							'slug'     => 'wpforms-lite',
-							'path'     => 'wpforms-lite/wpforms.php',
-							'required' => false
-						)
-					),
-					$plugins
-				),
-				'import'     => array(
-					'elementor' => array(
-						'content'    => 'https://athemes.com/themes-demo-content/sydney/wedding/content.xml',
-						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/wedding/widgets.wie',
-						'customizer' => 'https://athemes.com/themes-demo-content/sydney/wedding/customizer.dat',
-					),
-					'gutenberg'    => array(
-						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/wedding/content.xml',
-						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/wedding/widgets.wie',
-						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/wedding/' . $customizer_file
-					),
-				),
-			),
 			'resume'     => array(
 				'name'       => esc_html__( 'Resume', 'sydney' ),
 				'type'       => 'pro',
