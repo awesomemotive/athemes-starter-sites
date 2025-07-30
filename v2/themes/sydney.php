@@ -33,7 +33,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
-					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-main/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/main-pro/thumb.jpg',
@@ -59,11 +58,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-pro/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-pro/' . $customizer_file
 					),
-					'gutenberg'    => array(
-						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-pro/content.xml',
-						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-pro/widgets.wie',
-						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-pro/' . $customizer_file
-					),
 				),
 			),
 			'main-free' => array(
@@ -72,7 +66,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business', 'portfolio' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sydney-main/',
@@ -105,11 +98,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-free/content.xml',
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-free/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-free/' . $customizer_file
-					),
-					'gutenberg'    => array(
-						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-free/content.xml',
-						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-free/widgets.wie',
-						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-free/' . $customizer_file
 					)
 				),
 			),						
@@ -119,7 +107,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'ecommerce' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sydney-fashion/',
@@ -159,11 +146,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/fashion/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/fashion/' . $customizer_file
 					),
-					'gutenberg'    => array(
-						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/fashion/content.xml',
-						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/fashion/widgets.wie',
-						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/fashion/' . $customizer_file
-					),
 				),
 			),
 			'plumber'     => array(
@@ -172,7 +154,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-plumber/',
@@ -215,7 +196,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
-					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp--finance/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/finance-new/thumb.jpg',
@@ -250,7 +230,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sydney-photography/',
@@ -293,7 +272,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
-					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sydney-interior-design/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/interior-design/thumb.jpg',
@@ -335,7 +313,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
-					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-crypto/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/crypto/thumb.jpg',
@@ -369,7 +346,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-painting/',
@@ -405,7 +381,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
-					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-saas/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/saas/thumb.jpg',
@@ -439,7 +414,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-charity/',
@@ -475,7 +449,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
-					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-hotel/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/hotel/thumb.jpg',
@@ -509,7 +482,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-wedding-planner/',
@@ -545,7 +517,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
-					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-news/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/news/thumb.jpg',
@@ -580,7 +551,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
-					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/construction/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/construction/thumb.jpg',
@@ -614,7 +584,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/cafe/',
@@ -655,7 +624,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-hair-salon/',
@@ -730,7 +698,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/gardening/',
@@ -812,7 +779,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
-					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sydney-lms-learndash/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/lms/thumb.jpg',
@@ -846,7 +812,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sydney-lms/',
@@ -918,7 +883,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
-					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp--restaurant/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/restaurant/thumb.jpg',
@@ -952,7 +916,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-yoga/',
@@ -988,7 +951,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
-					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-business/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/business/thumb.jpg',
@@ -1023,7 +985,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
-					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp--coworking/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/coworking-new/thumb.jpg',
@@ -1046,7 +1007,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'portfolio' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-resume/',
@@ -1081,7 +1041,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'portfolio', 'ecommerce' ),
 				'builders'   => array(
 					'elementor',
-					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/author/',
