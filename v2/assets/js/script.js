@@ -210,6 +210,20 @@ _dcs.account = 5598225;
       $atss.on('change', '.atss-import-builder-select input', function (e) {
         $atss.find('.atss-import-plugin-builder').addClass('atss-hidden');
         $atss.find('.atss-import-plugin-builder input').prop('checked', false);
+
+        // Handle regular plugins with builder parameter
+        var selectedBuilder = $(this).val();
+        $atss.find('label[data-plugin-builder]').each(function () {
+          var $label = $(this);
+          var pluginBuilder = $label.attr('data-plugin-builder');
+          if (pluginBuilder && pluginBuilder !== selectedBuilder) {
+            $label.addClass('atss-hidden');
+            $label.find('input').prop('checked', false);
+          } else if (pluginBuilder && pluginBuilder === selectedBuilder) {
+            $label.removeClass('atss-hidden');
+            $label.find('input').prop('checked', true);
+          }
+        });
         if ($(this).is(':checked')) {
           var $builder = $atss.find('.atss-import-plugin-' + $(this).data('builder-plugin'));
           $builder.removeClass('atss-hidden');
