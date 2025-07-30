@@ -82,7 +82,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'name'     => 'aThemes Addons for Elementor Lite',
 							'slug'     => 'athemes-addons-for-elementor-lite',
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
-							'required' => false
+							'required' => false,
+							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -128,7 +129,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'name'     => 'aThemes Addons for Elementor Lite',
 							'slug'     => 'athemes-addons-for-elementor-lite',
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
-							'required' => false
+							'required' => false,
+							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -168,7 +170,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'name'     => 'aThemes Addons for Elementor Lite',
 							'slug'     => 'athemes-addons-for-elementor-lite',
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
-							'required' => false
+							'required' => false,
+							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -202,7 +205,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'name'     => 'aThemes Addons for Elementor Lite',
 							'slug'     => 'athemes-addons-for-elementor-lite',
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
-							'required' => false
+							'required' => false,
+							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -242,7 +246,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'name'     => 'aThemes Addons for Elementor Lite',
 							'slug'     => 'athemes-addons-for-elementor-lite',
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
-							'required' => false
+							'required' => false,
+							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -282,7 +287,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'name'     => 'aThemes Addons for Elementor Lite',
 							'slug'     => 'athemes-addons-for-elementor-lite',
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
-							'required' => false
+							'required' => false,
+							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -747,7 +753,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'name'     => 'aThemes Addons for Elementor Lite',
 							'slug'     => 'athemes-addons-for-elementor-lite',
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
-							'required' => false
+							'required' => false,
+							'builder'  => 'elementor'
 						),			
 					),
 					$plugins
@@ -833,7 +840,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'name'     => 'aThemes Addons for Elementor Lite',
 							'slug'     => 'athemes-addons-for-elementor-lite',
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
-							'required' => false
+							'required' => false,
+							'builder'  => 'elementor'
 						),										
 					),
 					$plugins
