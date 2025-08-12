@@ -68,6 +68,9 @@ Go to Plugins > Add New and search for aThemes Starter Sites. Install and activa
 
 == Changelog ==
 
+= 1.1.0 =
+* Gutenberg support for Sydney starters
+
 = 1.0.59 =
 * Added demo Handbags to Botiga Pro
 
