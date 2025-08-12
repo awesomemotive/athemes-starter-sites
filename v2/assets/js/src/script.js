@@ -269,7 +269,6 @@ _dcs.account = 5598225;
         e.preventDefault();
 
         var demoId      = $(this).data('demo-id');
-        var colorScheme = $(this).data('color-scheme');
         var demoObj     = window.atss_localize.demos[ demoId ];
         var template    = wp.template('atss-import');
 
@@ -281,7 +280,6 @@ _dcs.account = 5598225;
           demoObj.args = {};
 
           demoObj.args.demoId   = demoId;
-          demoObj.args.colorScheme = colorScheme;
           demoObj.args.quick    = $(this).data('quick') || ( demoObj.builders.length < 2 ) || false;
           demoObj.args.builder  = $(this).data('builder') || demoObj.builders[0];
           demoObj.args.imported = window.atss_localize.imported || atssDoneOrFail;
@@ -336,6 +334,21 @@ _dcs.account = 5598225;
 
         $atss.find('.atss-import-plugin-builder').addClass('atss-hidden');
         $atss.find('.atss-import-plugin-builder input').prop('checked', false);
+
+        // Handle regular plugins with builder parameter
+        var selectedBuilder = $(this).val();
+        $atss.find('label[data-plugin-builder]').each(function() {
+          var $label = $(this);
+          var pluginBuilder = $label.attr('data-plugin-builder');
+          
+          if (pluginBuilder && pluginBuilder !== selectedBuilder) {
+            $label.addClass('atss-hidden');
+            $label.find('input').prop('checked', false);
+          } else if (pluginBuilder && pluginBuilder === selectedBuilder) {
+            $label.removeClass('atss-hidden');
+            $label.find('input').prop('checked', true);
+          }
+        });
 
         if ( $(this).is(':checked') ) {
 
