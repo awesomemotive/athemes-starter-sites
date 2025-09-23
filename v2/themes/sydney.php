@@ -91,8 +91,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
 							'required' => false,
 							'builder'  => 'elementor'
-							'required' => false,
-							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -146,8 +144,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
 							'required' => false,
 							'builder'  => 'elementor'
-							'required' => false,
-							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -195,8 +191,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
 							'required' => false,
 							'builder'  => 'elementor'
-							'required' => false,
-							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -206,11 +200,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/plumber/content.xml',
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/plumber/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/plumber/' . $customizer_file
-					),
-					'gutenberg'    => array(
-						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/plumber/content.xml',
-						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/plumber/widgets.wie',
-						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/plumber/' . $customizer_file
 					),
 					'gutenberg'    => array(
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/plumber/content.xml',
@@ -236,8 +225,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'name'     => 'aThemes Addons for Elementor Lite',
 							'slug'     => 'athemes-addons-for-elementor-lite',
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
-							'required' => false,
-							'builder'  => 'elementor'
 							'required' => false,
 							'builder'  => 'elementor'
 						),
@@ -282,8 +269,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
 							'required' => false,
 							'builder'  => 'elementor'
-							'required' => false,
-							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -293,11 +278,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/photography/content.xml',
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/photography/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/photography/' . $customizer_file
-					),
-					'gutenberg'    => array(
-						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/photography/content.xml',
-						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/photography/widgets.wie',
-						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/photography/' . $customizer_file
 					),
 					'gutenberg'    => array(
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/photography/content.xml',
@@ -329,8 +309,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'name'     => 'aThemes Addons for Elementor Lite',
 							'slug'     => 'athemes-addons-for-elementor-lite',
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
-							'required' => false,
-							'builder'  => 'elementor'
 							'required' => false,
 							'builder'  => 'elementor'
 						),
@@ -810,8 +788,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
 							'required' => false,
 							'builder'  => 'elementor'
-							'required' => false,
-							'builder'  => 'elementor'
 						),			
 					),
 					$plugins
@@ -821,11 +797,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/leads/content.xml',
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/leads/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/leads/' . $customizer_file
-					),
-					'gutenberg'    => array(
-						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/leads/content.xml',
-						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/leads/widgets.wie',
-						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/leads/' . $customizer_file
 					),
 					'gutenberg'    => array(
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/leads/content.xml',
@@ -906,8 +877,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
 							'required' => false,
 							'builder'  => 'elementor'
-							'required' => false,
-							'builder'  => 'elementor'
 						),										
 					),
 					$plugins
@@ -917,11 +886,6 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/lms/content.xml',
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/lms/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/lms/' . $customizer_file
-					),
-					'gutenberg'    => array(
-						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/tutor-lms/content.xml',
-						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/tutor-lms/widgets.wie',
-						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/tutor-lms/' . $customizer_file
 					),
 					'gutenberg'    => array(
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/tutor-lms/content.xml',

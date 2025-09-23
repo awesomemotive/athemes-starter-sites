@@ -8,7 +8,7 @@ Contributors: aThemes
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Weâ€™ve got a full and ever-growing library stocked with ready-made templates for any kind of business.
+We've got a full and ever-growing library stocked with ready-made templates for any kind of business.
 
 == Description ==
 
@@ -18,7 +18,7 @@ Business owners, freelancers, Online Store Owners, and creatives: get ready to b
 
 = Pick your website template =
 
-Weâ€™ve got a full and ever-growing library stocked with ready-made templates for any kind of business.
+We've got a full and ever-growing library stocked with ready-made templates for any kind of business.
 
 = Add your own awesome content =
 
