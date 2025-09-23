@@ -33,6 +33,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
+					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-main/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/main-pro/thumb.jpg',
@@ -58,6 +59,11 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-pro/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-pro/' . $customizer_file
 					),
+					'gutenberg'    => array(
+						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-pro/content.xml',
+						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-pro/widgets.wie',
+						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-pro/' . $customizer_file
+					),
 				),
 			),
 			'main-free' => array(
@@ -66,6 +72,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business', 'portfolio' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sydney-main/',
@@ -84,6 +91,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
 							'required' => false,
 							'builder'  => 'elementor'
+							'required' => false,
+							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -98,6 +107,11 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-free/content.xml',
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-free/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-free/' . $customizer_file
+					),
+					'gutenberg'    => array(
+						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-free/content.xml',
+						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-free/widgets.wie',
+						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/main-free/' . $customizer_file
 					)
 				),
 			),						
@@ -107,6 +121,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'ecommerce' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sydney-fashion/',
@@ -131,6 +146,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
 							'required' => false,
 							'builder'  => 'elementor'
+							'required' => false,
+							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -146,6 +163,11 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/fashion/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/fashion/' . $customizer_file
 					),
+					'gutenberg'    => array(
+						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/fashion/content.xml',
+						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/fashion/widgets.wie',
+						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/fashion/' . $customizer_file
+					),
 				),
 			),
 			'plumber'     => array(
@@ -154,6 +176,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-plumber/',
@@ -172,6 +195,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
 							'required' => false,
 							'builder'  => 'elementor'
+							'required' => false,
+							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -187,6 +212,11 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/plumber/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/plumber/' . $customizer_file
 					),
+					'gutenberg'    => array(
+						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/plumber/content.xml',
+						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/plumber/widgets.wie',
+						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/plumber/' . $customizer_file
+					),
 				),
 			),
 			'finance'    => array(
@@ -195,6 +225,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp--finance/',
@@ -205,6 +236,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'name'     => 'aThemes Addons for Elementor Lite',
 							'slug'     => 'athemes-addons-for-elementor-lite',
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
+							'required' => false,
+							'builder'  => 'elementor'
 							'required' => false,
 							'builder'  => 'elementor'
 						),
@@ -231,6 +264,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
+					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sydney-photography/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/photography/thumb.jpg',
@@ -248,6 +282,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
 							'required' => false,
 							'builder'  => 'elementor'
+							'required' => false,
+							'builder'  => 'elementor'
 						),
 					),
 					$plugins
@@ -263,6 +299,11 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/photography/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/photography/' . $customizer_file
 					),
+					'gutenberg'    => array(
+						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/photography/content.xml',
+						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/photography/widgets.wie',
+						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/photography/' . $customizer_file
+					),
 				),
 			),	
 			'interior-design'    => array(
@@ -271,6 +312,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sydney-interior-design/',
@@ -287,6 +329,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'name'     => 'aThemes Addons for Elementor Lite',
 							'slug'     => 'athemes-addons-for-elementor-lite',
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
+							'required' => false,
+							'builder'  => 'elementor'
 							'required' => false,
 							'builder'  => 'elementor'
 						),
@@ -312,6 +356,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-crypto/',
@@ -347,6 +392,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
+					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-painting/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/painting/thumb.jpg',
@@ -380,6 +426,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-saas/',
@@ -415,6 +462,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
+					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-charity/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/charity/thumb.jpg',
@@ -448,6 +496,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-hotel/',
@@ -483,6 +532,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
+					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-wedding-planner/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/wedding-planner/thumb.jpg',
@@ -516,6 +566,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'blog', 'magazine' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-news/',
@@ -551,6 +602,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
+					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/construction/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/construction/thumb.jpg',
@@ -584,6 +636,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/cafe/',
@@ -624,6 +677,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-hair-salon/',
@@ -699,6 +753,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
+					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/gardening/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/gardening/thumb.jpg',
@@ -755,6 +810,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
 							'required' => false,
 							'builder'  => 'elementor'
+							'required' => false,
+							'builder'  => 'elementor'
 						),			
 					),
 					$plugins
@@ -770,6 +827,11 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/leads/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/leads/' . $customizer_file
 					),
+					'gutenberg'    => array(
+						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/leads/content.xml',
+						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/leads/widgets.wie',
+						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/leads/' . $customizer_file
+					),
 				),
 			),	
 			'learndash-lms'    => array(
@@ -778,6 +840,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sydney-lms-learndash/',
@@ -813,6 +876,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
+					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sydney-lms/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/lms/thumb.jpg',
@@ -842,6 +906,8 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 							'path'     => 'athemes-addons-for-elementor-lite/athemes-addons-elementor.php',
 							'required' => false,
 							'builder'  => 'elementor'
+							'required' => false,
+							'builder'  => 'elementor'
 						),										
 					),
 					$plugins
@@ -851,6 +917,11 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/lms/content.xml',
 						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/lms/widgets.wie',
 						'customizer' => 'https://athemes.com/themes-demo-content/sydney/lms/' . $customizer_file
+					),
+					'gutenberg'    => array(
+						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/tutor-lms/content.xml',
+						'widgets'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/tutor-lms/widgets.wie',
+						'customizer' => 'https://athemes.com/themes-demo-content/sydney/gutenberg/tutor-lms/' . $customizer_file
 					),
 					'gutenberg'    => array(
 						'content'    => 'https://athemes.com/themes-demo-content/sydney/gutenberg/tutor-lms/content.xml',
@@ -882,6 +953,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business', 'ecommerce' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp--restaurant/',
@@ -917,6 +989,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
+					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-yoga/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/yoga/thumb.jpg',
@@ -950,6 +1023,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'business' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-business/',
@@ -985,6 +1059,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'builders'   => array(
 					'elementor',
 					'gutenberg',
+					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp--coworking/',
 				'thumbnail'  => 'https://athemes.com/themes-demo-content/sydney/coworking-new/thumb.jpg',
@@ -1007,6 +1082,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'portfolio' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/sp-resume/',
@@ -1041,6 +1117,7 @@ if ( !function_exists( 'sydney_atss_demos_list') ) {
 				'categories' => array( 'portfolio', 'ecommerce' ),
 				'builders'   => array(
 					'elementor',
+					'gutenberg',
 					'gutenberg',
 				),
 				'preview'    => 'https://demo.athemes.com/author/',
