@@ -1170,6 +1170,13 @@ function sydney_atss_setup_after_import( $demo_id ) {
 		update_option('sydney_template_builder_data', $template_builder_data);
 	}
 
+	if ( 'main-free' === $demo_id ) {
+		$aafe_modules = get_option( 'athemes-addons-modules' );
+		$aafe_modules = ( is_array( $aafe_modules ) ) ? $aafe_modules : (array) $aafe_modules;
+
+		update_option( 'athemes-addons-modules', array_merge( $aafe_modules, array( 'testimonials' => true ) ) );
+	}
+
 	if ( 'fashion' === $demo_id ) {
 		$merchant_modules = get_option( 'merchant-modules' );
 		$merchant_modules = ( is_array( $merchant_modules ) ) ? $merchant_modules : (array) $merchant_modules;
@@ -1179,7 +1186,7 @@ function sydney_atss_setup_after_import( $demo_id ) {
 		$aafe_modules = get_option( 'athemes-addons-modules' );
 		$aafe_modules = ( is_array( $aafe_modules ) ) ? $aafe_modules : (array) $aafe_modules;
 
-		update_option( 'athemes-addons-modules', array_merge( $aafe_modules, array( 'woo-product-grid' => true ) ) );
+		update_option( 'athemes-addons-modules', array_merge( $aafe_modules, array( 'woo-product-grid' => true, 'testimonials' => true ) ) );
 	}
 
 	if ( 'plumber' === $demo_id ) {
