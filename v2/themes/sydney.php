@@ -1175,6 +1175,29 @@ function sydney_atss_setup_after_import( $demo_id ) {
 		$aafe_modules = ( is_array( $aafe_modules ) ) ? $aafe_modules : (array) $aafe_modules;
 
 		update_option( 'athemes-addons-modules', array_merge( $aafe_modules, array( 'testimonials' => true ) ) );
+
+		// Assign footer menus to widgets
+		$footer_menus = array(
+			'Footer 1' => array( 'About' ),
+			'Footer 2' => array( 'Locations' ),
+			'Footer 4' => array( 'Policy' ),
+		);
+
+		foreach ( $footer_menus as $menu_name => $widget_titles ) {
+			$footer_menu = get_term_by( 'name', $menu_name, 'nav_menu' );
+			if ( ! empty( $footer_menu ) ) {
+				$nav_menu_widget = get_option( 'widget_nav_menu' );
+				foreach ( $nav_menu_widget as $key => $widget ) {
+					if ( $key !== '_multiwidget' ) {
+						if ( ! empty( $nav_menu_widget[ $key ]['title'] ) && in_array( $nav_menu_widget[ $key ]['title'], $widget_titles ) ) {
+							$nav_menu_widget[ $key ]['nav_menu'] = $footer_menu->term_id;
+							update_option( 'widget_nav_menu', $nav_menu_widget );
+						}
+					}
+				}
+			}
+		}
+		
 	}
 
 	if ( 'fashion' === $demo_id ) {
